@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/danildanil638/FirstGitProject_Lesson12#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
   },
   "dependencies": {
     "browser-sync": "^2.26.7"
