@@ -7,8 +7,15 @@
   background: $dark url('../img/hero.jpg') no-repeat center/cover
   height: 100vh
   color: $light
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7)
   &__content
-   max-width: 650px
+    position: relative
+    max-width: 650px
   &__text
     font-family: FuturaBookC
     font-size: 22px
@@ -34,19 +41,36 @@
     text-transform: uppercase
     color: $light
     text-decoration: none
+    &::after
+      content: ''
+      background: url(../img/arrow_down.svg) no-repeat center
+      width: 30px
+      height: 30px
+      border: 1px solid $primary
+      border-radius: 50%
+      margin-left: 12px
 .instagram
     display: flex
-    justify-content:g center
+    justify-content: center
     align-items: center
     background-color: $dark
 // не работает через амперсант
 .instagram__link
+    display: flex
+    align-items: center
     text-transform: uppercase
     text-decoration: none
     color: $primary
     transform: rotate(90deg)
     font-family: FuturaDemiC;
     font-size: 14px;
+    line-height: 0.8
+    &::after
+      content: ''
+      width: 51px
+      height: 1px
+      background-color: $primary
+      margin-left: 8px
 .title
   margin: 0
   font-family: 'Yeseva One', cursive
