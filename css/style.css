@@ -335,6 +335,11 @@ body {
   margin: auto; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
 
@@ -361,6 +366,7 @@ body {
 
 .hero {
   position: relative;
+  padding-top: 100px;
   background: #131313 url("../img/hero.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
