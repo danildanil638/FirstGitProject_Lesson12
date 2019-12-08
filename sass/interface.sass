@@ -1,8 +1,6 @@
 body
   font-family: 'Futura Book'
   font-size: 14px
-
-
 .button
   padding: 13px 20px
   border-radius: 2px
@@ -11,10 +9,13 @@ body
   &--primary                
     background-color: #E3B873
     color: #fff 
+  &--outline
+    border: 1px solid #fff 
+    background-color: transparent
+    color:#fff 
 // Переменные не срабатывают если их ставить,команада Gulp serve выдаёт ошибку. Не смог пофиксить.
 //  Message:
 // sass\interface.sass
 // Error: Invalid CSS after "...or: $primary; }": expected 1 selector or at-rule, was "{"
 // on line 10 of sass/interface.sass
  // >> background-color: $primary; } {
-
