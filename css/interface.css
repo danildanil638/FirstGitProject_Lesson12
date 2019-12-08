@@ -1,5 +1,12 @@
+body {
+  font-family: 'Futura Book';
+  font-size: 14px; }
+
 .button {
   padding: 13px 20px;
   border-radius: 2px;
   border: none;
-  background-color: #fff; }
+  text-transform: uppercase; }
+  .button--primary {
+    background-color: #E3B873;
+    color: #fff; }

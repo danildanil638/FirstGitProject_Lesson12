@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,SAAS;EAClB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EAGZ,gBAAgB,EAAE,IAAI;CAAG",
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,aAAa;EAC1B,SAAS,EAAE,IAAI;CAAG;;AAGpB,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,SAAS;EAClB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EACZ,cAAc,EAAE,SAAS;CAGP;;AAFjB,AAAD,gBAAU,CAAC;EACT,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;CAAG",
     "sources": [
-        "../sass/iterface.sass"
+        "../sass/interface.sass"
     ],
     "names": [],
-    "file": "iterface.css"
+    "file": "interface.css"
 }
