@@ -318,7 +318,7 @@ template {
   display: none; }
 
 .button {
-  padding: 13px 24px;
+  padding: 0.92rem 1.71rem;
   font-family: FuturaDemi;
   border-radius: 2px;
   border: none;
@@ -340,12 +340,10 @@ template {
     background-color: transparent;
     color: #fff;
     font-size: 0.93rem; }
-  .button--p {
-    padding: 13px 0px; }
 
 .container {
   width: 85%;
-  max-width: 100rem;
+  max-width: 1256px;
   margin: auto; }
 
 html {
@@ -355,25 +353,37 @@ body {
   font-family: 'FuturaBook' sans-serif;
   font-size: 1rem; }
 
+.section {
+  padding: 60px 0; }
+  .section-title {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 2rem; }
+    .section-title__heading {
+      font-family: 'Yeseva One', cursive;
+      text-transform: uppercase; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image::after, .section-title__image::before {
+        content: '';
+        width: 32px;
+        height: 2px;
+        background-color: #E3B873;
+        margin: 0 10px; }
+
+.section-title__description {
+  margin: auto;
+  margin-top: 1.64rem;
+  font-size: 2.07rem;
+  line-height: 130%;
+  min-width: 21.85rem;
+  font-family: FuturaBook;
+  font-Size: 1.07 rem; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
-
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
-  font-size: 2.6rem;
-  line-height: 1.3; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::after, .section-title__image::before {
-      content: '';
-      width: 32px;
-      height: 2px;
-      background-color: #E3B873;
-      margin: 0 10px; }
 
 .header {
   position: fixed;
@@ -382,7 +392,7 @@ body {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 1.7rem 0; }
 
 .menu {
   display: flex;
@@ -411,13 +421,18 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px;
+  margin-right: 3.2rem;
   font-family: FuturaDemi;
   font-weight: 500;
-  font-size: 1rem; }
+  font-size: 1rem;
+  cursor: pointer; }
 
 .contacts--right {
   margin-right: 1rem; }
+
+.contacts__button {
+  padding-right: 1.43rem;
+  padding-left: 1.43rem; }
 
 .hero {
   display: flex;
@@ -448,8 +463,8 @@ body {
     margin-bottom: 4.5rem;
     margin: 0; }
   .hero__button {
-    padding: 18px 26px;
-    margin-right: 20px;
+    padding: 1.28rem 1.857rem;
+    margin-right: 1.42rem;
     line-height: 110%;
     margin-top: 3.5rem; }
   .hero__instagram {
@@ -479,7 +494,7 @@ body {
       height: 30px;
       border: 1px solid #E3B873;
       border-radius: 50%;
-      margin-left: 18px; }
+      margin-left: 1.28rem; }
 
 .instagram {
   display: flex;
@@ -502,7 +517,7 @@ body {
     width: 48px;
     height: 1px;
     background-color: #E3B873;
-    margin-left: 11px; }
+    margin-left: 1.27rem; }
 
 .title {
   margin: 0;
@@ -516,9 +531,130 @@ body {
   .title--primary {
     color: #E3B873; }
 
-.button--p {
-  padding-right: 40px;
-  padding-left: 40px; }
+.button--application {
+  padding-right: 3rem;
+  padding-left: 3rem; }
+
+.types__section-title {
+  margin-bottom: 2rem; }
+
+.row {
+  display: flex;
+  aligne-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin: 0 auto;
+  margin-top: -10rem;
+  max-width: 23.6rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  margin-top: 0;
+  margin-bottom: 0.7rem; }
+
+.card__list {
+  margin: 0;
+  padding: 0 0 0 0 1rem;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  margin-bottom: 2.5rem;
+  color: #959595; }
+
+.card__priceteg {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.214rem 2.6rem; }
+
+@media screen and (max-width: 570px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__text {
+    margin-left: 0; } }
+
+.design {
+  background-color: #131313; }
+  .design__section-title {
+    color: #fff;
+    margin-bottom: 2.78rem; }
+    .design__section-title__card {
+      margin-bottom: 5.7rem; }
+
+.card__image {
+  display: block;
+  margin: auto;
+  width: 100%; }
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin-top: -10rem;
+  max-width: 23.6rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  margin-top: 0;
+  margin-bottom: 0.7rem; }
+
+.card__list {
+  margin: 0;
+  padding: 0 0 0 0 1rem;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  margin-bottom: 2.5rem;
+  color: #959595; }
+
+.card__priceteg {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.214rem 2.6rem; }
+
+.row {
+  display: flex;
+  flex-direction: column; }
+
+@media screen and (min-width: 760px) {
+  .design {
+    background-color: #fff; }
+    .design__section-title {
+      color: #131313; }
+  .row {
+    flex-direction: row;
+    justify-content: space-between; }
+  .card {
+    flex-basis: 32%; }
+  .section-title__description {
+    min-width: 53rem; }
+  __priceteg {
+    background-color: #fff; } }
 
 @media screen and (max-width: 1300px) {
   html {
@@ -548,9 +684,10 @@ body {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    margin: 0 auto;
+    width: 321px;
+    font-size: 1.5rem; }
   .hero__text {
-    font-size: 1.29rem;
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
