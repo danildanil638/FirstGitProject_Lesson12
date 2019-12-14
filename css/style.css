@@ -353,6 +353,12 @@ body {
   font-family: 'FuturaBook' sans-serif;
   font-size: 1rem; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
 .section {
   padding: 60px 0; }
   .section-title {
@@ -371,19 +377,13 @@ body {
         width: 32px;
         height: 2px;
         background-color: #E3B873;
-        margin: 0 10px; }
-
-.section-title__description {
-  margin: auto;
-  margin-top: 1.64rem;
-  font-size: 2.07rem;
-  line-height: 130%;
-  min-width: 21.85rem;
-  font-family: FuturaBook;
-  font-Size: 1.07 rem; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
+        margin: 0 0.71rem; }
+    .section-title__description {
+      margin: auto;
+      margin-top: 1.2rem;
+      font-size: 1.37rem;
+      line-height: 135%;
+      max-width: 21.86rem; }
 
 .header {
   position: fixed;
@@ -564,11 +564,14 @@ body {
 
 .card__list {
   margin: 0;
-  padding: 0 0 0 0 1rem;
-  font-size: 1.07rem;
+  padding: 0 0 0 1rem;
+  font-family: FuturaBook;
+  font-size: 0.928rem;
   line-height: 1.79rem;
   margin-bottom: 2.5rem;
-  color: #959595; }
+  color: #959595;
+  width: 100%;
+  left: 0; }
 
 .card__priceteg {
   position: absolute;
@@ -581,22 +584,13 @@ body {
   color: #fff;
   padding: 1.214rem 2.6rem; }
 
-@media screen and (max-width: 570px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
-  .card__text {
-    margin-left: 0; } }
-
 .design {
   background-color: #131313; }
   .design__section-title {
     color: #fff;
     margin-bottom: 2.78rem; }
-    .design__section-title__card {
-      margin-bottom: 5.7rem; }
+  .design__card {
+    margin-bottom: 5.7rem; }
 
 .card__image {
   display: block;
@@ -637,24 +631,12 @@ body {
   color: #fff;
   padding: 1.214rem 2.6rem; }
 
+.card__list {
+  margin-right: 4rem; }
+
 .row {
   display: flex;
   flex-direction: column; }
-
-@media screen and (min-width: 760px) {
-  .design {
-    background-color: #fff; }
-    .design__section-title {
-      color: #131313; }
-  .row {
-    flex-direction: row;
-    justify-content: space-between; }
-  .card {
-    flex-basis: 32%; }
-  .section-title__description {
-    min-width: 53rem; }
-  __priceteg {
-    background-color: #fff; } }
 
 @media screen and (max-width: 1300px) {
   html {
@@ -696,4 +678,30 @@ body {
 
 @media screen and (max-height: 550px) {
   .hero__scroll-down {
+    display: none; } }
+
+@media screen and (max-width: 570px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__text {
+    margin-left: 0; } }
+
+@media screen and (min-width: 760px) {
+  .section-title__description {
+    max-width: 52rem; }
+  .row {
+    flex-direction: row;
+    justify-content: space-between; }
+  .card {
+    flex-basis: 32%; }
+  .design {
+    background-color: #fff; }
+    .design__section-title {
+      color: #131313; } }
+
+@media screen and (max-width: 760px) {
+  .card__none {
     display: none; } }

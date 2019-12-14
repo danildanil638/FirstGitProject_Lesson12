@@ -3,8 +3,10 @@ html
 body
   font-family: 'FuturaBook' sans-serif
   font-size: 1rem
+*, *:before, *:after
+  box-sizing: border-box
 img
-  // min-width: 100%
+  max-width: 100%
 .section
   padding: 60px 0
   &-title
@@ -23,14 +25,10 @@ img
         width: 32px
         height: 2px
         background-color: $primary
-        margin: 0 10px
-.section-title__description
+        margin: 0 0.71rem
+    &__description
       margin: auto
-      margin-top: 1.64rem
-      font-size: 2.07rem
-      line-height: 130%
-      min-width: 21.85rem
-      font-family: FuturaBook
-      font-Size: 1.07 rem
-*, *:before, *:after
-  box-sizing: border-box
+      margin-top: 1.2rem
+      font-size: 1.37rem
+      line-height: 135%
+      max-width: 21.86rem
