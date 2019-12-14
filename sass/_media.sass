@@ -8,13 +8,22 @@
   .nav
     display: none
     &__item
-      margin-right: 1rem
+    margin-right: 1rem
   .hero
     &__instagram
       display: none
     &__content
       margin-left: 0
 @media screen and ( max-width: 570px )
+  .logo-mobile
+    font-size: 0.8rem
+  .phone--mobile
+    font-size: 0.8rem
+  .mobile--text
+    font-size: 1.2rem
+    max-width: 21.2rem
+  .mobile--button--text
+    font-size: 0.85rem
   .contacts
     &__phone
       margin-right: 0
@@ -50,18 +59,18 @@
   .card
     &__text
       margin-left: 0
-@media screen and ( min-width: 760px )
-  .section-title__description
-    max-width: 52rem
-  .row
-    flex-direction: row
-    justify-content: space-between
-  .card
-    flex-basis: 32%
-  .design
-    background-color: $light
-    &__section-title
-      color: $dark
-@media screen and ( max-width: 760px )
-  .card__none
-    display: none
+  @media screen and ( min-width: 760px )
+    .section-title__description
+      max-width: 52rem
+    .row
+      flex-direction: row
+      justify-content: space-between
+    .card
+      flex-basis: 32%
+    .design
+      background-color: $light
+      &__section-title
+        color: $dark
+  @media screen and ( max-width: 760px )
+    .card__none
+      display: none
