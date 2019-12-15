@@ -32,7 +32,7 @@
       display: none
     &__content
       margin: 0 auto
-      width: 321px
+      max-width: 321px
       font-size: 1.5rem
     &__title
       font-size: 1.9rem
@@ -41,7 +41,7 @@
       font-size: 1.52rem
     &__button
       display: block
-      width: 24.14rem
+      min-width: 107%
       margin-top: 3.1rem
       font-size: 1.05rem
       padding: 1.5rem 0
@@ -50,7 +50,7 @@
 @media screen and ( max-height: 550px )
   .hero__scroll-down
     display: none
-@media screen and ( max-width: 570px )
+@media screen and ( max-width: 760px )
   .row
     flex-direction: column
     align-items: center
@@ -61,8 +61,8 @@
     &__text
       margin-left: 0
 @media screen and ( max-width: 760px )
-    .card__none
-      display: none
+  .card__none
+    display: none
 @media screen and ( min-width: 760px )
   .row
     flex-direction: row
@@ -73,6 +73,10 @@
     background-color: $light
     &__section-title
       color: $dark
-      margin-bottom: 2.78rem
+      font-size: 6rem
   .section-title__description
-      width: 52.9rem
+      max-width: 52.9rem
+      font-size: 1.40rem
+      margin-top: 1rem
+  .section-title__heading
+    font-size: 1.4rem
