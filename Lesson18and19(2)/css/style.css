@@ -683,7 +683,7 @@ img {
 @media screen and (max-width: 570px) {
   .container {
     width: auto;
-    max-width: 340px;
+    max-width: 290px;
     margin: auto; }
   .menu__logo {
     font-size: 1rem; }
@@ -698,8 +698,6 @@ img {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    width: 100%;
-    man-width: 24.14rem;
     margin: 0 auto;
     font-size: 1.5rem; }
   .hero__title {
@@ -708,10 +706,8 @@ img {
     margin-bottom: 2.28rem;
     font-size: 1.52rem; }
   .hero__button {
-    margin: auto;
     display: block;
-    width: 100%;
-    max-width: 59.14rem;
+    min-width: 107%;
     margin-top: 3.1rem;
     font-size: 1.05rem;
     padding: 1.5rem 0; }
@@ -747,7 +743,7 @@ img {
       color: #131313;
       font-size: 6rem; }
   .section-title__description {
-    max-width: 53rem;
+    max-width: 2.9rem;
     font-size: 1.40rem;
     margin-top: 1rem; }
   .section-title__heading {
