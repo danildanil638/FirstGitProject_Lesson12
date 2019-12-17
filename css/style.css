@@ -685,7 +685,7 @@ img {
     position: relative;
     min-width: 36.36rem;
     max-height: 38.5rem;
-    background: #131313 url("/img/bg-lines.svg") no-repeat center;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
     padding: 2.5rem 3.5rem;
     color: #fff; }
   .modal__close {
@@ -694,7 +694,7 @@ img {
     top: 0;
     width: 28px;
     height: 28px;
-    background: transparent url("../img/icons/close.svg") no-repeat center;
+    background: transparent url("../img/close.svg") no-repeat center;
     border: none;
     margin: 12px;
     cursor: pointer; }
@@ -741,7 +741,7 @@ img {
   opacity: 0;
   visibility: hidden; }
   .policy__checkbox:checked + .policy__label::before {
-    background: #E3B873 url("../img/icons/check.svg") no-repeat center/0.8rem; }
+    background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
   display: flex;
@@ -808,7 +808,26 @@ img {
     font-size: 1.05rem;
     padding: 1.5rem 0; }
   .button--application {
-    margin-top: 2.3rem; } }
+    margin-top: 2.3rem; }
+  .col__types {
+    margin-bottom: -1.8rem; }
+  .card__item {
+    line-height: 1.95rem; }
+  .design__row {
+    margin-top: 3rem; }
+  .design--image {
+    margin-top: 1.5rem; }
+  .card__priceteg {
+    margin-top: 3rem; }
+  .design__row {
+    margin-top: 1rem; }
+  .design__card {
+    margin-top: -4rem; }
+  .card__priceteg {
+    width: 100%;
+    max-width: 16.5rem;
+    font-size: 1.2rem;
+    bottom: -1rem; } }
 
 @media screen and (max-height: 550px) {
   .hero__scroll-down {
