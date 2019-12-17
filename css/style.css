@@ -665,6 +665,98 @@ img {
   line-height: 136%;
   margin-top: 1.8rem; }
 
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal__dialog {
+    position: relative;
+    min-width: 36.36rem;
+    max-height: 38.5rem;
+    background: #131313 url("/img/bg-lines.svg") no-repeat center;
+    padding: 2.5rem 3.5rem;
+    color: #fff; }
+  .modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/icons/close.svg") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .modal__title {
+    line-height: 134%;
+    max-width: 25.85rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.357rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2.5rem; }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+  .modal__input {
+    margin-bottom: 3rem;
+    font-size: 2.28rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 0rem; }
+  .modal__button {
+    align-self: flex-end;
+    padding: 1.4rem 3.3rem;
+    margin-top: 3.1rem; }
+
+.label {
+  font-size: 1.07rem; }
+  .label--light {
+    color: rgba #fff, 0.5; }
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  font-size: 1.285rem;
+  font-family: 'FuturaBook';
+  font-family: 'FuturaMedium';
+  color: #fff;
+  padding: 0.5rem 0; }
+  .input::placeholder {
+    color: #fff; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+  .policy__checkbox:checked + .policy__label::before {
+    background: #E3B873 url("../img/icons/check.svg") no-repeat center/0.8rem; }
+
+.policy__label {
+  display: flex;
+  align-items: center;
+  font-size: 1.105rem;
+  font-family: 'FuturaBook'; }
+  .policy__label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 0.64rem; }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px; }

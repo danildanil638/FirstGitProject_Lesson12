@@ -1,2 +1,0 @@
-# FirstGitProject_Lesson14
-FirstGitProject_Lesson12
