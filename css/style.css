@@ -686,7 +686,7 @@ img {
     min-width: 36.36rem;
     max-height: 38.5rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
-    padding: 2.5rem 3.5rem;
+    padding: 1.7rem 3.8rem;
     color: #fff; }
   .modal__close {
     position: absolute;
@@ -706,19 +706,20 @@ img {
     font-weight: normal;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2rem;
+    margin-top: 0.5rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3rem;
+    margin-bottom: 3.3rem;
     font-size: 2.28rem; }
     .modal__input:last-of-type {
       margin-bottom: 0rem; }
   .modal__button {
     align-self: flex-end;
-    padding: 1.4rem 3.3rem;
-    margin-top: 3.1rem; }
+    padding: 1.35rem 3.2rem;
+    margin-top: 2.7rem; }
 
 .label {
   font-size: 1.07rem; }
@@ -746,7 +747,7 @@ img {
 .policy__label {
   display: flex;
   align-items: center;
-  font-size: 1.105rem;
+  font-size: 1.14rem;
   font-family: 'FuturaBook'; }
   .policy__label::before {
     content: '';
@@ -827,9 +828,14 @@ img {
     margin-top: -2rem; }
   .card__priceteg {
     width: 100%;
-    max-width: 15.8rem;
+    max-width: 16.13rem;
     font-size: 1.2rem;
-    bottom: -1rem; } }
+    bottom: -1rem; }
+  .modal__dialog {
+    min-width: 21.5rem;
+    max-height: 36.5rem; }
+  .modal__title {
+    font-size: 1.2rem; } }
 
 @media screen and (max-height: 550px) {
   .hero__scroll-down {
