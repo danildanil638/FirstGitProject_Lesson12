@@ -82,9 +82,6 @@
       max-height: 36.5rem
     &__title
       font-size: 1.2rem
-@media screen and ( max-height: 550px )
-  .hero__scroll-down
-    display: none
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -115,3 +112,10 @@
       margin-top: 1rem
   .section-title__heading
     font-size: 1.4rem
+@media screen and ( max-height: 550px )
+  .hero__scroll-down
+    display: none
+  //для modal
+  .modal__dialog
+    overflow-y: scroll
+    height: 352px
