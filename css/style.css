@@ -367,7 +367,14 @@ template {
   flex-basis: 30%; }
 
 .col-50 {
-  width: 50%; }
+  width: 45%; }
+
+.col__mobile {
+  display: none; }
+
+.col-55 {
+  width: 55%;
+  margin-top: -1.5rem; }
 
 html {
   font-size: 14px; }
@@ -382,6 +389,12 @@ body {
 img {
   max-width: 100%; }
 
+h2.section-title__heading, .section-title__heading--primary {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1.7rem; }
+
 .section {
   padding: 60px 0; }
   .section--dark {
@@ -389,14 +402,14 @@ img {
     color: #fff; }
   .section-title {
     text-align: center;
-    font-size: 0.95rem;
     line-height: 2rem; }
     .section-title--left {
       text-align: left; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
-      line-height: 138.6%; }
+      line-height: 136.6%;
+      font-size: 1.75rem; }
       .section-title__heading--primary {
         color: #E3B873; }
     .section-title--word {
@@ -404,12 +417,12 @@ img {
       align-items: center; }
       .section-title--word::after {
         content: '';
-        width: 90px;
+        width: 93px;
         height: 1px;
         background-color: #E3B873;
-        margin-left: 2rem; }
+        margin-left: 2.3rem; }
     .section-title__text {
-      font-size: 1.28rem;
+      font-size: 1.228rem;
       line-height: 2.07rem;
       max-width: 31.57rem; }
     .section-title__image {
@@ -591,13 +604,23 @@ img {
   padding-right: 3rem;
   padding-left: 3rem; }
 
+.swiper-container {
+  margin-top: 2rem; }
+
+.swiper__block {
+  flex-direction: column;
+  display: flex;
+  margin-right: 3rem; }
+
 .swiper-slide {
+  padding: 1px;
+  padding-bottom: 4.6rem;
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide_value {
+    line-height: 1.4rem; }
   .swiper-slide__text {
-    padding-bottom: 2rem;
-    flex-basis: 50%;
-    margin-bottom: 2.42rem; }
+    min-height: 7.6rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -606,11 +629,14 @@ img {
     font-weight: normal;
     text-transform: uppercase;
     margin-bottom: 0.64rem; }
+  .swiper-slide__image {
+    max-width: 55rem; }
 
 .swiper-pagination-bullets {
   width: auto; }
 
 .swiper-pagination-bullet {
+  border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.3); }
   .swiper-pagination-bullet-active {
     background-color: #fff; }
@@ -634,6 +660,16 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
+
+.swiper-pagination-bullet {
+  width: 9px;
+  height: 9px; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px; }
+
+.col-50__mobile {
+  display: none; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -851,6 +887,14 @@ img {
   .hero__content {
     margin-left: 0; } }
 
+@media screen and (max-width: 802px) {
+  .col-50 {
+    width: 100%; }
+    .col-50__desctop {
+      display: none; }
+    .col-50__mobile {
+      display: block; } }
+
 @media screen and (max-width: 570px) {
   .container {
     width: auto;
@@ -913,7 +957,42 @@ img {
     min-width: 21.5rem;
     max-height: 36.5rem; }
   .modal__title {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .swiper {
+    padding: 0; }
+    .swiper-button-prev {
+      left: 20%; }
+    .swiper-button-next {
+      left: 71% !important; }
+    .swiper-pagination {
+      right: 16%; }
+    .swiper-slide {
+      padding: 1px;
+      padding-bottom: 0;
+      flex-basis: 100%; }
+    .swiper__block {
+      margin-right: 2rem;
+      margin-top: -0.5rem;
+      margin-bottom: 2.5rem; }
+  .section {
+    padding: 1.5rem; }
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem; }
+      .section-title__text {
+        width: 100%;
+        max-width: 25rem;
+        margin: auto;
+        font-size: 1.15rem;
+        line-height: 170.48%;
+        font-family: FuturaBook; }
+      .section-title--word {
+        text-align: center;
+        display: block; }
+        .section-title--word::after {
+          display: none; }
+  .div.swiper-pagination.spiper-pagination-bullets {
+    left: 15rem; } }
 
 @media screen and (max-width: 760px) {
   .row {

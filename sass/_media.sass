@@ -14,6 +14,15 @@
       display: none
     &__content
       margin-left: 0
+@media screen and ( max-width: 802px )
+
+  .col-50
+    width: 100%
+    &__desctop
+      display: none
+    &__mobile
+      display: block
+
 @media screen and ( max-width: 570px )
   .container
     width: auto
@@ -82,6 +91,48 @@
       max-height: 36.5rem
     &__title
       font-size: 1.2rem
+  // section project
+  .swiper
+    &-button
+      &-prev
+        left: 20%
+      &-next
+        left: 71% !important 
+    &-pagination
+      right: 16%
+    &-slide
+      padding: 1px
+      padding-bottom: 0
+      flex-basis: 100%
+    &-container
+    padding: 0
+    &__block
+      margin-right: 2rem
+      margin-top: -0.5rem
+      margin-bottom: 2.5rem
+  .section
+    padding: 1.5rem
+    &-title
+      text-align: center
+      margin-bottom: 3rem
+      &__text
+        width: 100%
+        max-width: 25rem
+        margin: auto
+        font-size: 1.15rem
+        line-height: 170.48%
+        font-family: FuturaBook
+      &--word
+        text-align: center
+        display: block
+        &::after
+          display: none
+  
+  .div.swiper-pagination.spiper-pagination-bullets
+    left: 15rem
+
+
+
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column

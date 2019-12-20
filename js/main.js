@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   closeBtn.addEventListener('click', switchModal);
     });
 */
-
 $(document).ready(function(){
   const modal = $('.modal'),
     modalBtn = $('[data-toggle=modal]'),
@@ -41,7 +40,7 @@ $(document).ready(function(){
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() +10 + bullets.width() +10)
-  bullets.css('left', prev.width() +10)
+  next.css('left', prev.width() +16 + bullets.width() +16)
+  bullets.css('left', prev.width() +16)
 
 });

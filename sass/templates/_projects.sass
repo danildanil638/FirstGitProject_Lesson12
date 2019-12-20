@@ -1,11 +1,20 @@
 .swiper
+  &-container
+    margin-top: 2rem
+  
+  &__block
+    flex-direction: column
+    display: flex
+    margin-right: 3rem
   &-slide
+    padding: 1px
+    padding-bottom: 4.6rem
     display: flex
     flex-wrap: wrap
+    &_value
+      line-height: 1.4rem
     &__text
-      padding-bottom: 2rem
-      flex-basis: 50%
-      margin-bottom: 2.42rem
+      min-height: 7.6rem
     &__heading
       font-size: 1.285rem
       line-height: 1.78rem
@@ -14,10 +23,13 @@
       font-weight: normal
       text-transform: uppercase
       margin-bottom: 0.64rem
+    &__image
+      max-width: 55rem
   &-pagination
     &-bullets
       width: auto
     &-bullet
+      border-radius: 16px
       background-color: rgba($light, 0.3)
       &-active
         background-color: $light
@@ -38,3 +50,11 @@
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: -2px
+.swiper-pagination-bullet
+  width: 9px
+  height: 9px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 9px;
+.col-50__mobile
+  display: none
+
