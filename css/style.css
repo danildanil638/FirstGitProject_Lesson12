@@ -367,14 +367,13 @@ template {
   flex-basis: 30%; }
 
 .col-50 {
-  width: 45%; }
+  width: 50%; }
 
-.col__mobile {
-  display: none; }
+.col-44 {
+  width: 44%; }
 
-.col-55 {
-  width: 55%;
-  margin-top: -1.5rem; }
+.col-56 {
+  width: 56%; }
 
 html {
   font-size: 14px; }
@@ -409,7 +408,8 @@ h2.section-title__heading, .section-title__heading--primary {
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
       line-height: 136.6%;
-      font-size: 1.75rem; }
+      font-size: 1.75rem;
+      font-weight: normal; }
       .section-title__heading--primary {
         color: #E3B873; }
     .section-title--word {
@@ -610,15 +610,25 @@ h2.section-title__heading, .section-title__heading--primary {
 .swiper__block {
   flex-direction: column;
   display: flex;
-  margin-right: 3rem; }
+  margin-right: 3rem;
+  min-width: 11rem; }
+  .swiper__block__wrap {
+    display: flex;
+    margin-bottom: 1.3rem; }
+    .swiper__block__wrap:last-child {
+      margin-bottom: 2.4rem; }
 
 .swiper-slide {
   padding: 1px;
   padding-bottom: 4.6rem;
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide_flex {
+    display: flex;
+    flex-direction: column; }
   .swiper-slide_value {
-    line-height: 1.4rem; }
+    line-height: 1.4rem;
+    font-family: FuturaBook; }
   .swiper-slide__text {
     min-height: 7.6rem; }
   .swiper-slide__heading {
@@ -626,11 +636,10 @@ h2.section-title__heading, .section-title__heading--primary {
     line-height: 1.78rem;
     font-family: 'Yeseva One', cursive;
     color: #E3B873;
-    font-weight: normal;
+    font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 0.64rem; }
-  .swiper-slide__image {
-    max-width: 55rem; }
+    margin-bottom: 0.64rem;
+    font-weight: normal; }
 
 .swiper-pagination-bullets {
   width: auto; }
@@ -657,6 +666,9 @@ h2.section-title__heading, .section-title__heading--primary {
 .swiper-button-next {
   background: url("../img/arrow-next.svg") no-repeat center; }
 
+.block__left {
+  margin-left: -0.6rem; }
+
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
@@ -668,8 +680,19 @@ h2.section-title__heading, .section-title__heading--primary {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 9px; }
 
-.col-50__mobile {
+.hidden {
   display: none; }
+
+.section-title__text {
+  line-height: 158%;
+  font-family: FuturaBook;
+  font-size: 1.28rem; }
+
+.section-block_left {
+  width: 50%; }
+
+.wrapper {
+  display: inline-block; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -887,13 +910,77 @@ h2.section-title__heading, .section-title__heading--primary {
   .hero__content {
     margin-left: 0; } }
 
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 760px) {
+  .row {
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__text {
+    margin-left: 0; }
+  .card__none {
+    display: none; } }
+
+@media screen and (max-width: 772px) {
+  .visible {
+    display: none; }
+  .hidden {
+    display: block; }
   .col-50 {
     width: 100%; }
-    .col-50__desctop {
-      display: none; }
-    .col-50__mobile {
-      display: block; } }
+  .swiper {
+    padding: 0; }
+    .swiper-button-prev {
+      left: 20%; }
+    .swiper-button-next {
+      left: 68% !important; }
+    .swiper-pagination {
+      right: 16%; }
+    .swiper-slide {
+      padding: 1px;
+      padding-bottom: 0;
+      flex-basis: 100%; }
+      .swiper-slide__image {
+        margin-top: 1rem;
+        max-width: 100%;
+        padding: 0; }
+      .swiper-slide__heading {
+        font-size: 1.170rem; }
+      .swiper-slide_value {
+        font-size: 1.15rem;
+        line-height: 130%; }
+    .swiper__block {
+      margin-right: 3rem;
+      margin-top: -0.5rem;
+      margin-bottom: 2rem; }
+      .swiper__block__wrap {
+        margin-bottom: 0; }
+        .swiper__block__wrap:last-child {
+          margin-bottom: 2.6rem; }
+  .section {
+    padding: 1.5rem; }
+    .section .col-56 {
+      margin-top: 0;
+      width: 100%; }
+    .section .col-44 {
+      width: 100%; }
+    .section .row {
+      display: flex;
+      flex-direction: column-reverse; }
+    .section-title {
+      text-align: center; }
+      .section-title--word {
+        text-align: center;
+        display: block; }
+        .section-title--word::after {
+          display: none; }
+      .section-title__heading {
+        text-align: center;
+        font-size: 1.71rem; }
+      .section-title__text {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        max-width: 90%; } }
 
 @media screen and (max-width: 570px) {
   .container {
@@ -953,59 +1040,13 @@ h2.section-title__heading, .section-title__heading--primary {
     max-width: 16.13rem;
     font-size: 1.2rem;
     bottom: -1rem; }
+  .swiper-slide__image {
+    max-height: 17rem; }
   .modal__dialog {
     min-width: 21.5rem;
     max-height: 36.5rem; }
   .modal__title {
-    font-size: 1.2rem; }
-  .swiper {
-    padding: 0; }
-    .swiper-button-prev {
-      left: 20%; }
-    .swiper-button-next {
-      left: 71% !important; }
-    .swiper-pagination {
-      right: 16%; }
-    .swiper-slide {
-      padding: 1px;
-      padding-bottom: 0;
-      flex-basis: 100%; }
-    .swiper__block {
-      margin-right: 2rem;
-      margin-top: -0.5rem;
-      margin-bottom: 2.5rem; }
-  .section {
-    padding: 1.5rem; }
-    .section-title {
-      text-align: center;
-      margin-bottom: 3rem; }
-      .section-title__text {
-        width: 100%;
-        max-width: 25rem;
-        margin: auto;
-        font-size: 1.15rem;
-        line-height: 170.48%;
-        font-family: FuturaBook; }
-      .section-title--word {
-        text-align: center;
-        display: block; }
-        .section-title--word::after {
-          display: none; }
-  .div.swiper-pagination.spiper-pagination-bullets {
-    left: 15rem; } }
-
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
-  .card__text {
-    margin-left: 0; } }
-
-@media screen and (max-width: 760px) {
-  .card__none {
-    display: none; } }
+    font-size: 1.2rem; } }
 
 @media screen and (min-width: 760px) {
   .row {

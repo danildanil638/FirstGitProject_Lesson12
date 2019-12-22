@@ -14,15 +14,82 @@
       display: none
     &__content
       margin-left: 0
-@media screen and ( max-width: 802px )
+@media screen and ( max-width: 760px )
+  .row
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5rem
+  .card
+    &__text
+      margin-left: 0
 
+  .card__none
+    display: none
+@media screen and ( max-width: 772px )
+  .visible
+    display: none 
+  .hidden
+    display: block
   .col-50
     width: 100%
-    &__desctop
-      display: none
-    &__mobile
-      display: block
-
+  .swiper
+    &-button
+      &-prev
+        left: 20%
+      &-next
+        left: 68% !important 
+    &-pagination
+      right: 16%
+    &-slide
+      padding: 1px
+      padding-bottom: 0
+      flex-basis: 100%
+      &__image
+        margin-top: 1rem
+        max-width: 100%
+        padding: 0
+      &__heading
+        font-size: 1.170rem
+      &_value
+        font-size: 1.15rem
+        line-height: 130%
+    &-container
+    padding: 0
+    &__block
+      margin-right: 3rem
+      margin-top: -0.5rem
+      margin-bottom: 2rem
+      &__wrap
+        margin-bottom: 0
+        &:last-child
+          margin-bottom: 2.6rem
+  
+  .section
+    padding: 1.5rem
+    .col-56
+      margin-top: 0
+      width: 100%
+    .col-44
+      width: 100%
+    .row
+      display: flex
+      flex-direction: column-reverse
+    &-title
+      text-align: center
+      &--word
+        text-align: center
+        display: block
+        &::after
+          display: none
+      &__heading
+        text-align: center
+        font-size: 1.71rem
+      &__text
+        text-align: center
+        margin: 0 auto
+        font-size: 1.2rem
+        max-width: 90%
 @media screen and ( max-width: 570px )
   .container
     width: auto
@@ -84,6 +151,8 @@
     max-width: 16.13rem
     font-size: 1.2rem
     bottom: -1rem 
+  .swiper-slide__image
+    max-height: 17rem
   // для modal
   .modal
     &__dialog
@@ -91,61 +160,7 @@
       max-height: 36.5rem
     &__title
       font-size: 1.2rem
-  // section project
-  .swiper
-    &-button
-      &-prev
-        left: 20%
-      &-next
-        left: 71% !important 
-    &-pagination
-      right: 16%
-    &-slide
-      padding: 1px
-      padding-bottom: 0
-      flex-basis: 100%
-    &-container
-    padding: 0
-    &__block
-      margin-right: 2rem
-      margin-top: -0.5rem
-      margin-bottom: 2.5rem
-  .section
-    padding: 1.5rem
-    &-title
-      text-align: center
-      margin-bottom: 3rem
-      &__text
-        width: 100%
-        max-width: 25rem
-        margin: auto
-        font-size: 1.15rem
-        line-height: 170.48%
-        font-family: FuturaBook
-      &--word
-        text-align: center
-        display: block
-        &::after
-          display: none
-  
-  .div.swiper-pagination.spiper-pagination-bullets
-    left: 15rem
 
-
-
-@media screen and ( max-width: 760px )
-  .row
-    flex-direction: column
-    align-items: center
-  .types
-    &__card
-      margin-bottom: 5rem
-  .card
-    &__text
-      margin-left: 0
-@media screen and ( max-width: 760px )
-  .card__none
-    display: none
 @media screen and ( min-width: 760px )
   .row
     flex-direction: row

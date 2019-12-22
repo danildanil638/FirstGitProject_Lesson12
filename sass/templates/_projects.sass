@@ -1,18 +1,28 @@
 .swiper
   &-container
     margin-top: 2rem
-  
   &__block
     flex-direction: column
     display: flex
     margin-right: 3rem
+    min-width: 11rem
+    &__wrap 
+      display: flex
+      margin-bottom: 1.3rem
+      &:last-child
+        margin-bottom: 2.4rem
+    
   &-slide
     padding: 1px
     padding-bottom: 4.6rem
     display: flex
     flex-wrap: wrap
+    &_flex
+      display: flex
+      flex-direction: column
     &_value
       line-height: 1.4rem
+      font-family: FuturaBook
     &__text
       min-height: 7.6rem
     &__heading
@@ -20,11 +30,12 @@
       line-height: 1.78rem
       font-family: 'Yeseva One', cursive
       color: $primary
-      font-weight: normal
+      font-weight: bold
       text-transform: uppercase
       margin-bottom: 0.64rem
-    &__image
-      max-width: 55rem
+      font-weight: normal
+    // &__image
+    //   max-width: 500px
   &-pagination
     &-bullets
       width: auto
@@ -47,6 +58,9 @@
       background: url('../img/arrow-prev.svg') no-repeat center
     &-next
       background: url('../img/arrow-next.svg') no-repeat center
+
+.block__left
+  margin-left: -0.6rem
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: -2px
@@ -55,6 +69,18 @@
   height: 9px
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
   margin: 0 9px;
-.col-50__mobile
+.hidden
   display: none
 
+.section
+  &-title
+    &__text
+      line-height: 158%
+      font-family: FuturaBook
+      font-size: 1.28rem
+  &-block
+    &_left
+      width: 50%
+      
+.wrapper
+  display: inline-block
