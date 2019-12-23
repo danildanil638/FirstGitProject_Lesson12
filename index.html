@@ -6,23 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Lesson_21</title>
+  <title>Lesson_22</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo logo-mobile">Repair Design Project</div>
-        <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Главная</a>
+        <div class="logo menu__logo logo-mobile wow fadeInLeft">Repair Design Project</div>
+        <nav class="nav menu__nav wow rubberBand">
+          <a href="#" class="nav__item ">Главная</a>
           <a href="#" class="nav__item">Проекты</a>
           <a href="#" class="nav__item">Замер</a>
           <a href="#" class="nav__item">Команда</a>
           <a href="#" class="nav__item">Отзывы</a>
           <a href="#" class="nav__item">Контакты</a>
         </nav>
-        <div class="contacts menu_contacts">
+        <div class="contacts menu_contacts wow fadeInRight">
           <a class="phone contacts__phone" href="tel:+79997683299">+7(999) 768-32-99</a>
           <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button> 
         </div>
@@ -38,26 +39,16 @@
       </div>  
         <div class="container">
           <div class="hero__content">
-            <h1 class="title hero__title mobille__heading">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-            <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-            <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
-            <button class="button hero__button button--outline button--application">Отправить заявку</button>
+            <h1 class="title hero__title mobille__heading wow fadeInLeft">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+            <p class="hero__text wow fadeInLeft">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+            <button class="button hero__button button--primary wow fadeInLeft" data-toggle="modal">Рассчитать стоимость</button>
+            <button class="button hero__button button--outline button--application wow fadeInLeft">Отправить заявку</button>
         </div>
         </div>
         <!-- /.container -->
-        <a class="hero__scroll-down"  href="#">листайте вниз</a>
+        <a class="hero__scroll-down wow tada"  href="#">листайте вниз</a>
     </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <section class="section section--dark projects">
+    <section class="section section--dark projects wow">
       <div class="container">
         <div class="section-text hidden">
           <div class="section-title section-title--left">
@@ -70,33 +61,33 @@
           <div class="col-44">
             <div class="section-text visible">
               <div class="section-title section-title--left">
-                <h2 class="section-title__heading section-title__heading--primary">Завершённые <span class="section-title--word"> проекты </span></h2>
-                <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. 
+                <h2 class="section-title__heading section-title__heading--primary wow fadeInLeft">Завершённые <span class="section-title--word"> проекты </span></h2>
+                <p class="section-title__text wow fadeInLeft">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. 
                 За 14 лет работы на строительном рынке мы осчастливили более 1000 семей </p>
               </div>
             </div>
             <div class="swiper-container">
               <!-- Additional required wrapper -->
-              <div class="swiper-wrapper ">
+              <div class="swiper-wrapper swiper-no-swiping">
                   <!-- Slides -->
-                  <div class="swiper-slide">
+                  <div class="swiper-slide ">
                     <div class="swiper-slide_flex">
                       <div class="swiper__block__wrap">
-                        <div class="swiper__block">
+                        <div class="swiper__block wow fadeInRight">
                           <h3 class="swiper-slide__heading"> Город:</h3>
                           <span class="swiper-slide_value">Ростов-на-Дону <br> ЖК Адмирал</span>
                         </div>
-                        <div class="swiper__block block__left">
+                        <div class="swiper__block block__left wow fadeInRight">
                           <h3 class="swiper-slide__heading">Площадь:</h3>
                           <span class="swiper-slide_value">81 м2</span>
                         </div>
                       </div>
                       <div class="swiper__block__wrap">
-                        <div class="swiper__block">
+                        <div class="swiper__block wow fadeInRight">
                           <h3 class="swiper-slide__heading">Срок ремонта:</h3>
                           <span class="swiper-slide_value">3,5 месяца</span>
                         </div>
-                        <div class="swiper__block block__left">
+                        <div class="swiper__block block__left wow fadeInRight">
                           <h3 class="swiper-slide__heading">Стоимость:</h3>
                           <span class="swiper-slide_value">По запросу</span>
                         </div>
@@ -167,7 +158,7 @@
           <div class="swiper-container">
             <!-- Additional required wrapper -->
            
-            <div class="swiper-wrapper swiper-no-swiping">
+            <div class="swiper-wrapper swiper-no-swiping wow fadeInLeft">
                 <!-- Slides -->
                 <div class="swiper-slide swiper-slide__image"> <img src="img/project/project.jpg" alt="project"></div>
                 <div class="swiper-slide swiper-slide__image"> <img src="img/project/project.jpg" alt="project"></div>
@@ -179,33 +170,46 @@
       </div>
       <!-- /.container -->
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="section control">
       <div class="container">
-        <div class="section-title">
-          <h2 class="section-title__heading">Онлайн контроль</h2>
+        <div class="section-title control__section-title section-title--light">
+          <h2 class="control__section-title__heading">онлайн контроль</h2>
           <div class="section-title__image">
             <img src="img/icons/control.svg" alt="video">
           </div>
         </div>
+        <div class="control__video video">
+          <img src="img/play-icon.svg" alt="play-icon" class="video__play">
+        </div>
+        <!-- /.control__video video -->
+        <p class="control__text"> 
+          На каждом объекте установлена ​​камера, которая 
+          транслирует ход работы на часах. В любой момент вы 
+          можете зайти на наш сайт и следить за ходом работы в 
+          вашей квартире. Посмотрите прямую трансляцию с одного из
+          наших объектов! Оставьте заявку ниже чтобы получить 
+          ссылку на трансляцию.
+        </p>
+          <form action="#" class="form control__form">
+            <div class="control__input-group input-button">
+              <label for="user-name" class="label form__label control__label">Имя</label>
+              <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+            </div>
+            <div class="control__input-group">
+              <label for="user-name" class="label form__label control__label">Телефон</label>
+              <input type="text" class="input form__input control__input" id="user-name" placeholder="Ваш номер телефона:">
+            </div>
+            <button class="button button--primary control__button">Отправить</button>
+            <div class="policy control__policy">
+              <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+              <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных </label>
+            </div>
+          </form>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.section controll -->
-      <section class="section types">
+    <section class="section types">
         <div class="container">
           <div class="section-title types__section-title">
             <h2 class="section-title__heading">Виды ремонта</h2>
@@ -217,7 +221,7 @@
           </div>
           <!-- /.section-title  -->
           <div class="row">
-            <div class="col-30 col__types">
+            <div class="col-30 col__types wow zoomInLeft">
               <div class="card types__card">
                 <img src="img/types-1.jpg" alt="Косметический ремонт" class="card__image">
                 <div class="card__text">
@@ -248,7 +252,7 @@
               <!-- /.card -->
             </div>
             <!-- /.col -->
-            <div class="col-30 col__types">
+            <div class="col-30 col__types wow shake">
               <div class="card types__card">
                 <img src="img/types-2.jpg" alt="Капитальный ремонт" class="card__image">
                 <div class="card__text">
@@ -278,7 +282,7 @@
               <!-- /.card -->
             </div>
             <!-- /.col -->
-            <div class="col-30 col__types">
+            <div class="col-30 col__types wow zoomInRight">
               <div class="card types__card">
                 <img src="img/types-3.jpg" alt="Дизайнерский ремонт" class="card__image ">
                 <div class="card__text">
@@ -330,7 +334,7 @@
           </div>
           <!-- /section title -->
           <div class="row design__row">
-            <div class="card design__card">
+            <div class="card design__card wow zoomInLeft">
               <img src="img/Design/design-1.jpg" alt="design-1" class="card__image design--image">
               <div class="card__text">
                 <h3 class="card__title">Минимальный</h3>
@@ -351,7 +355,7 @@
               <!-- /.card__text -->
             </div>
             <!-- /.card -->
-            <div class="card design__card">
+            <div class="card design__card wow shake">
               <img src="img/Design/design-2.jpg" alt="design-2" class="card__image design--image">
               <div class="card__text">
                 <h3 class="card__title">Стандартный</h3>
@@ -378,7 +382,7 @@
               <!-- /.card__text -->
             </div>
             <!-- /.card -->
-            <div class="card design__card">
+            <div class="card design__card wow zoomInRight">
               <img src="img/Design/design-3.jpg" alt="design-3" class="card__image design--image">
               <div class="card__text">
                 <h3 class="card__title">Полный</h3>
@@ -426,14 +430,14 @@
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
       <form action="#" class="form modal__form">
         <label for="user-name" class="label form__label label--light">Имя</label>
-        <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:">
+        <input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
         <label for="user-name" class="label form__label label--light">Телефон</label>
-        <input type="text" class="input form__input modal__input" id="user-name" placeholder="Ваш номер телефона:">
+        <input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Ваш номер телефона:">
         <label for="user-name" class="label form__label label--light">Email</label>
-        <input type="text" class="input form__input modal__input" id="user-name" placeholder="Ваш email:">
+        <input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Ваш email:">
         <div class="policy modal__policy">
-          <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox"  checked >
-          <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных </label>
+          <input type="checkbox" name="policy-checkbox" id="policy-checkbox1" class="policy__checkbox"  checked >
+          <label for="policy-checkbox1" class="policy__label">Я соглашаюсь с обработкой данных </label>
         </div>
         <button class="button button--primary modal__button">Отправить заявку</button>
       </form>
@@ -443,6 +447,7 @@
   <!-- /.modal -->  
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

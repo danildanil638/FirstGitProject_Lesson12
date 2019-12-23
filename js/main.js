@@ -26,6 +26,8 @@ $(document).ready(function(){
 
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
+    shortSwipes: false,
+    longSwipes: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -42,5 +44,7 @@ $(document).ready(function(){
 
   next.css('left', prev.width() +17 + bullets.width() +17)
   bullets.css('left', prev.width() +17)
+
+  new WOW().init();
 
 });

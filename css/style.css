@@ -404,6 +404,8 @@ h2.section-title__heading, .section-title__heading--primary {
     line-height: 2rem; }
     .section-title--left {
       text-align: left; }
+    .section-title--light {
+      color: #fff; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
@@ -604,6 +606,9 @@ h2.section-title__heading, .section-title__heading--primary {
   padding-right: 3rem;
   padding-left: 3rem; }
 
+.projects {
+  padding-bottom: 30rem; }
+
 .swiper-container {
   margin-top: 2rem; }
 
@@ -693,6 +698,80 @@ h2.section-title__heading, .section-title__heading--primary {
 
 .wrapper {
   display: inline-block; }
+
+.control__section-title__heading {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.65rem;
+  font-weight: normal; }
+
+.control__label {
+  margin-bottom: -7px; }
+
+.control__button {
+  padding: 1.2857rem 4.785rem;
+  font-size: 1.05rem; }
+
+.control__section-title {
+  margin-bottom: 2.214rem;
+  margin-top: -30rem; }
+
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4.28rem;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/control/video.jpg") center no-repeat;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+  .control__video::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.control__text {
+  max-width: 40.485rem;
+  margin: auto;
+  margin-bottom: 4.285rem;
+  text-align: center;
+  font-size: 1.428rem;
+  line-height: 2.41rem;
+  font-family: FuturaBook;
+  font-weight: normal; }
+  .control__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.2rem;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    border-radius: 30px; }
+
+.control__form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto;
+  justify-content: space-between; }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1.2rem; }
+  .control__policy-label {
+    justify-content: center;
+    margin-right: 5rem; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -872,7 +951,7 @@ h2.section-title__heading, .section-title__heading--primary {
   font-family: 'FuturaMedium';
   color: #fff;
   padding: 0.5rem 0; }
-  .input::placeholder {
+  .input::placeholder--light {
     color: #fff; }
 
 .policy__checkbox {
@@ -980,7 +1059,49 @@ h2.section-title__heading, .section-title__heading--primary {
         text-align: center;
         margin: 0 auto;
         font-size: 1.2rem;
-        max-width: 90%; } }
+        max-width: 90%; }
+  .control {
+    padding-top: 30.8rem;
+    background-color: #131313;
+    color: #fff; }
+    .control__video {
+      margin-bottom: 2.7rem;
+      max-width: 45.28rem;
+      min-height: 30rem;
+      background: #131313 url("../img/control/video.jpg") center no-repeat; }
+    .control__form {
+      flex-direction: column; }
+    .control__button {
+      order: 4;
+      margin-bottom: -3rem; }
+    .control__section-title {
+      margin-bottom: 3.2rem; }
+    .control__text {
+      font-size: 1.15rem;
+      line-height: 2rem;
+      margin-bottom: 2.4rem; }
+      .control__text::before {
+        margin-bottom: 1.4rem; }
+    .control__input-group {
+      margin-bottom: 5.2rem; }
+      .control__input-group:nth-child(2) {
+        margin-bottom: 0; }
+    .control__label {
+      margin: 0; }
+    .control__policy {
+      margin-bottom: 4.8rem; }
+      .control__policy-label {
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 1.34rem; }
+    .control__input {
+      font-size: 1.45rem; }
+    .control__button {
+      font-size: 1.25rem; }
+  .video__play {
+    max-width: 10rem; }
+  .types {
+    margin-top: 5rem; } }
 
 @media screen and (max-width: 570px) {
   .container {
@@ -1042,11 +1163,25 @@ h2.section-title__heading, .section-title__heading--primary {
     bottom: -1rem; }
   .swiper-slide__image {
     max-height: 17rem; }
+  .swiper-button-prev {
+    z-index: 99; }
   .modal__dialog {
     min-width: 21.5rem;
     max-height: 36.5rem; }
   .modal__title {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .control__video {
+    max-width: 28.28rem;
+    min-height: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: #131313 url("../img/control/video-2.png") center no-repeat; }
+  .control__section-title__heading {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.12rem;
+    font-weight: normal; }
+  .video__play {
+    max-width: 7rem; } }
 
 @media screen and (min-width: 760px) {
   .row {
