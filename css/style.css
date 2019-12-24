@@ -765,7 +765,9 @@ h2.section-title__heading, .section-title__heading--primary {
   justify-content: space-between; }
 
 .control__input {
-  color: #131313; }
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  margin-top: 0.5rem; }
 
 .control__input-group {
   display: flex;
@@ -917,6 +919,12 @@ h2.section-title__heading, .section-title__heading--primary {
     max-width: 37.142rem;
     margin: auto; }
   .footer__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    font-size: 1.285rem;
+    font-family: 'FuturaMedium';
+    color: #fff;
     padding: 0 !important; }
     .footer__input-group {
       display: flex;
@@ -1001,17 +1009,14 @@ h2.section-title__heading, .section-title__heading--primary {
   .label--light {
     color: rgba #fff, 0.5; }
 
-.input {
+.modal__input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
-  font-family: 'FuturaBook';
   font-family: 'FuturaMedium';
   color: #fff;
   padding: 0.5rem 0; }
-  .input::placeholder--light {
-    color: #fff; }
 
 .policy__checkbox {
   opacity: 0;

@@ -82,8 +82,29 @@ $(document).ready(function(){
   $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7 (___) __-__-___" });
 
 
- // Валидация формы, footer
-  $('.modal__form').validate({
+ // Валидация формы, controll
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userNameControl: {
+        required: true,
+        maxlength: 15,
+        minlength: 2
+      },
+      userPhoneControl: "required",
+    },
+    messages: {
+      userNameControl: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не должно быть длиннее 15 букв"
+      },
+      userPhoneControl: "Телефон обязателен"
+    }
+  });
+  // Валидация формы, footer
+  $('.footer__form').validate({
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -92,27 +113,17 @@ $(document).ready(function(){
         maxlength: 15,
         minlength: 2
       },
-      userEmail: "required",
-      // правило объекта
-      userEmail: {
-        required: true,
-        email: true
-      }
-    }, // сообщение
+      userPhoneFooter: "required",
+      userQuestionFooter: "required",
+    },
     messages: {
-      userName: {
+      userNameFooter: {
         required: "Имя обязательно",
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не должно быть длиннее 15 букв"
       },
-      userPhone: "Телефон обязателен",
-      userEmail: {
-        required: "Обязательно укажите Email",
-        email: "Введите в формате: mame@domain.com"
-      }
+      userPhoneFooter: "Телефон обязателен",
+      userQuestionFooter: "Обязательное поле"
     }
   });
-
-  // маска для номера телефона
-  $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7 (___) __-__-___" });
 });
