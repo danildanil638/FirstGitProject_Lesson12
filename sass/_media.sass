@@ -140,6 +140,24 @@
     &__wrap
       background-color: $dark
       margin-top: -3rem
+    &__menu
+      display: none
+    &__contacts
+      order: 2
+    &__map
+      order: 11
+    &__wrap__block
+      display: flex
+      flex-direction: column-reverse
+    &__map
+      width: 100%
+      max-width: 40rem
+      min-height: 22rem
+      margin-bottom: 2rem
+    &__title
+      &__contacts
+        font-size: 1.5rem
+        max-width: 26.28rem
 @media screen and ( max-width: 570px )
   .container
     width: auto
@@ -259,6 +277,7 @@
   .policy__label
     // font-size: 1.32rem
     line-height: 5px  
+    
 
 @media screen and ( min-width: 760px )
   .row

@@ -80,7 +80,8 @@ $(document).ready(function(){
       userEmail: {
         required: "Обязательно укажите Email",
         email: "Введите в формате: mame@domain.com"
-      }
+      },
+      policyСheckbox: "Вы не согласились с обработкой" 
     }
   });
 
@@ -102,6 +103,9 @@ $(document).ready(function(){
         required: true,
         minlength: 16
       },
+      policyСheckbox: {
+        required: true
+      }
     },
     messages: {
       userNameControl: {
@@ -109,7 +113,8 @@ $(document).ready(function(){
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не должно быть длиннее 15 букв"
       },
-      userPhoneControl: "Телефон обязателен"
+      userPhoneControl: "Телефон обязателен",
+      policyСheckbox: "Вы не согласились с обработкой" 
     }
   });
   // Валидация формы, footer
@@ -127,6 +132,9 @@ $(document).ready(function(){
         minlength: 16
       },
       userQuestionFooter: "required",
+      policyСheckbox: {
+        required: true
+      }
     },
     messages: {
       userNameFooter: {
@@ -135,7 +143,8 @@ $(document).ready(function(){
         maxlength: "Имя не должно быть длиннее 15 букв"
       },
       userPhoneFooter: "Телефон обязателен",
-      userQuestionFooter: "Обязательное поле"
+      userQuestionFooter: "Обязательное поле",
+      policyСheckbox: "Вы не согласились с обработкой" 
     }
   });
 // карта
