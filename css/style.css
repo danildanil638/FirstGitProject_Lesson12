@@ -904,6 +904,9 @@ h2.section-title__heading, .section-title__heading--primary {
     margin-top: -20rem;
     margin-bottom: 3.714rem;
     padding: 2.5rem; }
+    .footer__wrap__icons {
+      display: flex;
+      justify-content: center; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -912,6 +915,15 @@ h2.section-title__heading, .section-title__heading--primary {
     text-align: center;
     margin-bottom: 3.5rem;
     margin-top: 0; }
+    .footer__title__contacts {
+      color: #E3B873;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.428rem;
+      max-width: 42.07rem;
+      margin: auto;
+      font-family: 'Yeseva One', cursive;
+      font-weight: normal; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -944,6 +956,21 @@ h2.section-title__heading, .section-title__heading--primary {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin-bottom: 4rem;
+    min-height: 465px; }
+  .footer__icon__massage {
+    width: 50px;
+    height: 50px;
+    background: #E3B873 url("../img/footer/iconFooter1.svg") no-repeat center/1.5rem;
+    background-color: #E3B873;
+    border-radius: 50%; }
+  .footer__icon__phone {
+    width: 50px;
+    height: 50px;
+    background: #E3B873 url("../img/footer/iconFooter2.svg") no-repeat center/1.5rem;
+    background-color: #E3B873;
+    border-radius: 50%; }
 
 .modal {
   opacity: 0;

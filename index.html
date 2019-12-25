@@ -201,7 +201,7 @@
             </div>
             <button class="button button--primary control__button">Отправить</button>
             <div class="policy control__policy">
-              <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox">
+              <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
               <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных </label>
             </div>
           </form>
@@ -443,11 +443,23 @@
                     placeholder="Я хочу спросить:">
                 </div>
                 <div class="policy footer__policy">
-                  <input type="checkbox" name="policyCheckbox" id="policy-checkbox2" class="policy__checkbox">
+                  <input type="checkbox" name="policy-checkbox" id="policy-checkbox2" class="policy__checkbox" checked>
                   <label for="policy-checkbox2" class="policy__label policy__label--center">Я соглашаюсь на обработку данных </label>
                 </div>
                 <button class="button button--primary footer__button">Отправить</button>
               </form>
+          </div>
+          <div class="footer__contacts">
+            <h3 class="footer__title__contacts">
+              Ростов на дону, Торговый центр Plaza 
+              Прямой телефон +7 (999) 768 32 99
+            </h3>
+            <div class="footer__wrap__icons">
+              <div class="footer__icon__massage"></div>
+              <div class="footer__icon__phone"></div>
+            </div>
+          </div>
+          <div class="map footer__map" id="map">
           </div>
         </div>
             <div class="footer__menu">
@@ -490,8 +502,8 @@
           <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email:">
         </div>
         <div class="policy modal__policy">
-          <input type="checkbox" name="policyCheckbox" id="policy-checkbox1" class="policy__checkbox" >
-          <label for="policy-checkbox1" class="policy__label modal__policy__label">Я соглашаюсь с обработкой данных </label>
+          <input type="checkbox" name="policyСheckbox" id="policy-checkbox1" class="policy__checkbox">
+          <label for="policy-checkbox1" class="policy__label">Я соглашаюсь с обработкой данных </label>
         </div>
         <button class="button button--primary modal__button">Отправить заявку</button>
       </form>
@@ -504,6 +516,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=383e6933-bf29-4859-9490-dc684691df9e&lang=ru_RU" type="text/javascript"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -66,7 +66,7 @@ $(document).ready(function(){
         required: true,
         email: true
       },
-      policyCheckbox: {
+      policyСheckbox: {
         required: true
       }
     }, // сообщение
@@ -137,5 +137,38 @@ $(document).ready(function(){
       userPhoneFooter: "Телефон обязателен",
       userQuestionFooter: "Обязательное поле"
     }
+  });
+// карта
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+      center: [55.786786, 49.142331],
+      zoom: 15
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Наш оффис',
+        balloonContent: 'Вход со двора'
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+          iconImageHref: 'img/mapmarker.png',
+        // Размеры метки.
+        iconImageSize: [30, 42],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+    myMap.geoObjects
+      .add(myPlacemark)
   });
 });
