@@ -1161,6 +1161,7 @@ h2.section-title__heading, .section-title__heading--primary {
         justify-content: flex-start;
         font-size: 1.34rem; }
     .control__input {
+      background-color: #131313;
       font-size: 1.45rem; }
     .control__button {
       font-size: 1.25rem; }
@@ -1238,9 +1239,13 @@ h2.section-title__heading, .section-title__heading--primary {
     z-index: 99; }
   .modal__dialog {
     min-width: 21.5rem;
-    max-height: 36.5rem; }
+    max-height: 40.5rem; }
   .modal__title {
     font-size: 1.2rem; }
+  .modal__policy__label {
+    font-size: 1.14rem; }
+  .modal__button {
+    align-self: auto; }
   .control__video {
     max-width: 28.28rem;
     min-height: 17rem;
@@ -1275,7 +1280,6 @@ h2.section-title__heading, .section-title__heading--primary {
   .policy__label--center {
     justify-content: flex-start; }
   .policy__label {
-    font-size: 1.32rem;
     line-height: 5px; } }
 
 @media screen and (min-width: 760px) {

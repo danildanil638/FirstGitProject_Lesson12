@@ -57,11 +57,17 @@ $(document).ready(function(){
         maxlength: 15,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required:true,
+        minlength: 16
+      },
       // правило объекта
       userEmail: {
         required: true,
         email: true
+      },
+      policyCheckbox: {
+        required: true
       }
     }, // сообщение
     messages: {
@@ -92,7 +98,10 @@ $(document).ready(function(){
         maxlength: 15,
         minlength: 2
       },
-      userPhoneControl: "required",
+      userPhoneControl: {
+        required: true,
+        minlength: 16
+      },
     },
     messages: {
       userNameControl: {
@@ -113,7 +122,10 @@ $(document).ready(function(){
         maxlength: 15,
         minlength: 2
       },
-      userPhoneFooter: "required",
+      userPhoneFooter: {
+        required: true,
+        minlength: 16
+      },
       userQuestionFooter: "required",
     },
     messages: {
