@@ -34,7 +34,7 @@ try {
     $mail->Body    = "Имя пользователя: ${usernameFooter}, его(её) телефон: ${userphoneFooter}, Вопрос: {$userquestionFooter}";
                     
     $mail->send();
-    echo 'Письмо отправлено';
+     header('Location: thanks.html');
 } catch (Exception $e) {
     echo "Message could not be sent. Код ошибки: {$mail->ErrorInfo}";
 }
