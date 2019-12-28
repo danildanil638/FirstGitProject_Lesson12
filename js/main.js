@@ -18,10 +18,12 @@ $(document).ready(function(){
     closeBtn = $('.modal__close');
   
   modalBtn.on('click', function (){
-    modal.toggleClass('modal--visible')
+    modal.toggleClass('modal--visible');
+    $("body").css('overflow','hidden')
   });
   closeBtn.on('click', function (){
     modal.toggleClass('modal--visible');
+    $("body").css('overflow', 'visible')
   });
 
   var mySwiper = new Swiper ('.swiper-container', {
@@ -46,7 +48,6 @@ $(document).ready(function(){
   bullets.css('left', prev.width() +17)
 
   new WOW().init();
-
   // Валидация формы, модальное окно
   $('.modal__form').validate({
     errorClass: "invalid",

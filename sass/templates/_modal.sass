@@ -12,9 +12,11 @@
   display: flex
   align-items: center
   justify-content: center
+  transition: all 0.2s ease
   &--visible
     opacity: 1
     visibility: visible
+    transition: all 0.2s ease
   &__dialog
     position: relative
     min-width: 36.36rem
@@ -32,6 +34,7 @@
     border: none
     margin: 12px
     cursor: pointer
+    transition: all 0.2s ease
   &__title
     line-height: 134%
     max-width: 25.85rem
@@ -57,6 +60,12 @@
     align-self: flex-end
     padding: 1.35rem 3.2rem
     margin-top: 2.7rem
+  &__policy
+    position: relative
+  #policyСheckbox-error
+    position: absolute
+    left: 2rem
+    top: 2.6rem
 .label
   font-size: 1.07rem
   &--light
@@ -93,3 +102,6 @@
     &--center
       justify-content: center
  
+
+body.modal-open
+  overflow: hidden
