@@ -44,8 +44,12 @@ $(document).ready(function(){
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
+  
+
   next.css('left', prev.width() +17 + bullets.width() +17)
   bullets.css('left', prev.width() +17)
+
+
 
   new WOW().init();
   // Валидация формы, модальное окно
