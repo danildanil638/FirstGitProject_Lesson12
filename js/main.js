@@ -106,7 +106,7 @@ $(document).ready(function(){
       },
       userPhoneControl: {
         required: true,
-        minlength: 16
+        minlength: 17
       },
       policyСheckbox: {
         required: true
@@ -184,5 +184,11 @@ $(document).ready(function(){
 
     myMap.geoObjects
       .add(myPlacemark)
+  });
+  $(".menu").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
   });
 });

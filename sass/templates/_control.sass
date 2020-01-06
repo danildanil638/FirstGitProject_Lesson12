@@ -1,16 +1,18 @@
 .control
   &__section
+    margin-top: -3.5rem
     &-title
       &__heading
+        text-transform: uppercase
         font-family: 'Yeseva One', cursive
-        font-size: 1.65rem
+        font-size: 1.45rem
         font-weight: normal   
   &__label
-    font-family: FuturaBookC
+    font-family: FuturaBook
     margin-bottom: -7px
-    color: rgba(54, 54, 54, 0.5);
+    color: rgba(41, 17, 17, 0.5)
   &__button
-    padding: 1.2857rem 4.785rem
+    padding: 1.2857rem 4.3rem
     font-size: 1.05rem
   &__section-title
     margin-bottom: 2.214rem
@@ -23,7 +25,7 @@
     max-width: 58.357rem
     min-height: 31rem
     background: $dark url('../img/control/video.jpg') center no-repeat
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
     &::before
       content: ''
       position: absolute
@@ -62,21 +64,25 @@
   &__input
     border: none
     border-bottom: 1px solid rgba(54, 54, 54, 0.3)
-    margin-top: 0.5rem
+    margin-top: 0.7rem
+    padding-bottom: 0.5rem
+    font-family: FuturaBook
+    font-size: 1.3rem
     &::placeholder
       color: $dark
       font-family: FuturaBook
+      font-size: 1.3rem
   &__input-group
     display: flex
     flex-direction: column
     flex-basis: 30%
   &__policy
     position: relative
-    flex-basis: 100%
+    flex-basis: 10
     margin-top: 1.2rem
     &-label
       font-family: FuturaBook
-      color: rgba(54, 54, 54, 0.5);
+      color: rgba(54, 54, 54, 0.5)
       justify-content: center
       margin-right: 5rem
 .video

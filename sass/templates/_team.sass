@@ -1,7 +1,8 @@
 .team
-  min-height: 100rem
+  min-height: 100vh
   .section-title
     position: relative
+    margin-bottom: 6rem
     &__description
       font-family: FuturaBook
       font-weight: normal
@@ -10,7 +11,7 @@
   &__text
     max-width: 40.485rem
     margin: auto
-    margin-bottom: 4.285rem
+    margin-bottom: 9rem
     text-align: center
     font-size: 1.428rem
     line-height: 2.41rem
@@ -20,15 +21,19 @@
       content: ''
       display: block
       margin: auto
-      margin-bottom: 2.2rem
+      margin-top: -2.8rem
+      margin-bottom: 0.75rem
       width: 55px
       height: 2px
       background-color: $primary
       border-radius: 30px  
   &__card
+    margin: 0 auto
     position: relative
     max-width: 19.4rem
-    margin: 0 auto
+    flex-basis: 32%
+    &::nth-child(1)
+      margin-left: 0
   .card
     &__icon
       z-index: 5
@@ -50,7 +55,7 @@
       position: relative
       padding: 0
       text-align: center
-      top: -2rem
+      top: -6.1rem
       &__heading
         padding: 1.57rem 1.4rem 1.7rem 1.4rem
         background-color: $light

@@ -11,8 +11,11 @@
   &__margin
     margin-top: 25rem
 .col
-  &-30
-    width: 30%
+  &-33
+    width: 33%
+    margin-right: 2rem
+    &:nth-child(3)
+      margin-right: 0
   &-33
     flex-basis: 33%
   &-50
@@ -23,3 +26,22 @@
     width: 56%
   &-70
     width: 70%
+  &__projects
+    margin-top: -2rem
+  &__types
+    margin-top: -3rem
+.clients__col-33
+  position: relative
+  flex-basis: 33%
+  margin-left: 2.7rem
+  background-color: $light
+  padding: 1rem
+  padding-top: 0
+  box-shadow: 0px 20px 50px rgba(204, 167, 167, 0.15)
+  &:nth-child(1)
+    margin-left: 1.1rem
+.team__col-33
+  &:nth-child(1)
+    margin-left: 8rem
+  &:nth-child(3)
+    margin-right: 8rem
