@@ -1193,6 +1193,7 @@ h2.section-title__heading--primary {
       font-family: 'Yeseva One', cursive;
       font-weight: normal; }
   .footer__form {
+    color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1228,9 +1229,9 @@ h2.section-title__heading--primary {
     padding: 1.285rem 4rem; }
   .footer__menu {
     background-color: #131313;
-    padding: 4.285rem 0; }
+    padding: 4.285rem 0;
+    margin-top: 5rem; }
   .footer__map {
-    margin-bottom: 4rem;
     min-height: 33.21rem;
     max-width: 67.8rem;
     margin: auto; }
@@ -1661,11 +1662,16 @@ body.modal-open {
     display: none; }
   .footer {
     padding-top: 6.75rem; }
+    .footer__map {
+      max-height: 13rem; }
     .footer__title {
       font-size: 1.65rem;
       margin-bottom: 4.9rem; }
     .footer__wrap {
+      background-color: #131313;
       padding: 0; }
+      .footer__wrap::before {
+        display: none; }
     .footer__input-group {
       flex-basis: 100%;
       margin-bottom: 6.1rem; }
@@ -1747,7 +1753,9 @@ body.modal-open {
     width: 5.7rem;
     height: 5.7rem; }
   .team__text {
-    display: none; } }
+    display: none; }
+  .footer__wrap {
+    background-image: none; } }
 
 @media screen and (min-width: 760px) {
   .row {

@@ -319,14 +319,18 @@
     max-width: 7rem
   .clients
     display: none 
-  //footer
   .footer
     padding-top: 6.75rem
+    &__map
+      max-height: 13rem
     &__title
       font-size: 1.65rem
       margin-bottom: 4.9rem
     &__wrap
+      background-color: $dark
       padding: 0
+      &::before
+        display: none
     &__input-group
       flex-basis: 100%
       margin-bottom: 6.1rem
@@ -423,6 +427,9 @@
         height: 5.7rem
   .team__text
     display: none
+  .footer__wrap
+    background-image: none
+
 
 @media screen and ( min-width: 760px )
 
@@ -443,7 +450,6 @@
   .section-title__heading
     font-size: 1.4rem
 
-      
 @media screen and ( max-height: 550px )
   .hero__scroll-down
     display: none
