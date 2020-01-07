@@ -1175,6 +1175,7 @@ h2.section-title__heading--primary {
       margin-bottom: 3rem;
       margin-top: 1.8rem; }
   .footer__title {
+    color: #fff;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
@@ -1393,7 +1394,14 @@ body.modal-open {
   .team__col-33:nth-child(3) {
     margin: 0; }
   .team__col-33:nth-child(1) {
-    margin: 0; } }
+    margin: 0; }
+  .clients__col-33 {
+    flex-basis: 100%;
+    margin-bottom: 3rem; }
+    .clients__col-33:nth-child(1) {
+      margin-left: auto; }
+    .clients__col-33:nth-child(2) {
+      margin-right: auto; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1688,6 +1696,12 @@ body.modal-open {
       font-size: 1.25rem; }
     .footer__input {
       font-size: 1.5rem; }
+    .footer__icon__massage {
+      width: 3.5rem;
+      height: 3.5rem; }
+    .footer__icon__phone {
+      width: 3.5rem;
+      height: 3.5rem; }
   .policy__label--center {
     justify-content: flex-start; }
   .policy__label {

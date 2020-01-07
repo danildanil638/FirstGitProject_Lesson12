@@ -64,7 +64,7 @@ $(document).ready(function(){
       },
       userPhone: {
         required:true,
-        minlength: 16
+        minlength: 17
       },
       // правило объекта
       userEmail: {
@@ -91,7 +91,7 @@ $(document).ready(function(){
   });
 
   // маска для номера телефона
-  $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7 (___) __-__-___" });
+  $('[type=tel]').mask('7 (000) 000-00-00', { placeholder: "Ваш номер телефона:" });
 
 
  // Валидация формы, controll
@@ -122,6 +122,37 @@ $(document).ready(function(){
       policyСheckbox: "Вы не согласились с обработкой" 
     }
   });
+
+  $('.control__form__desctop').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userNameControl: {
+        required: true,
+        maxlength: 15,
+        minlength: 2
+      },
+      userPhoneControl: {
+        required: true,
+        minlength: 17
+      },
+      policyСheckbox: {
+        required: true
+      }
+    },
+    messages: {
+      userNameControl: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не должно быть длиннее 15 букв"
+      },
+      userPhoneControl: "Телефон обязателен",
+      policyСheckbox: "Вы не согласились с обработкой"
+    }
+  });
+
+
+
   // Валидация формы, footer
   $('.footer__form').validate({
     errorClass: "invalid",
@@ -134,7 +165,7 @@ $(document).ready(function(){
       },
       userPhoneFooter: {
         required: true,
-        minlength: 16
+        minlength: 15
       },
       userQuestionFooter: "required",
       policyСheckbox: {
@@ -156,9 +187,9 @@ $(document).ready(function(){
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
       center: [55.786786, 49.142331],
-      zoom: 15
+      zoom: 15,
     }, {
-      searchControlProvider: 'yandex#search'
+      searchControlProvider: 'yandex#search',
     }),
 
       // Создаём макет содержимого.
@@ -181,7 +212,7 @@ $(document).ready(function(){
         // её "ножки" (точки привязки).
         iconImageOffset: [-5, -38]
       });
-
+    myMap.behaviors.disable('scrollZoom'); 
     myMap.geoObjects
       .add(myPlacemark)
   });
