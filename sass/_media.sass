@@ -4,22 +4,20 @@
   .nav
     &__item
       margin-right: 1rem
+@media screen and ( max-width: 1070px )
+  .clients
+    .clients
+      &__col-33
+        min-width: 23rem
 @media screen and ( max-width: 1030px )
   .clients
     &__info
       top: auto
       bottom: 0
-    .clients__row
-      flex-wrap: wrap
-      justify-content: center 
-      margin-bottom: 3rem
-  .clients__col-33
-    margin: 0
-    width: 100%
-  .clients__col-33:nth-child(1)
-    margin: 0
-  .clients__col-33:nth-child(3)
-    margin: 0
+    .clients
+      &__row
+        justify-content: center 
+        margin-bottom: 3rem
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -35,13 +33,38 @@
   .team__col-33:nth-child(1)
     margin: 0
   .clients
+    &__row
+      justify-content: center
     &__col-33
-      flex-basis: 100%
-      margin-bottom: 3rem
+      min-height: 33rem
+      margin: 1.5rem
       &:nth-child(1)
-        margin-left: auto
-      &:nth-child(2)
+        margin-right: 0
+      &:nth-child(3)
+        margin-left: 0
+
+@media screen and ( max-width: 900px )
+  .clients
+    margin-bottom: 10rem
+    .clients__row
+      justify-content: center
+      flex-direction: column
+      flex-wrap: wrap
+    &__col-33
+      min-height: auto
+      margin: 0 auto
+      margin-bottom: 3rem
+      min-width: 24rem
+      padding-bottom: 2rem
+      &:nth-child(1)
         margin-right: auto
+        margin-left: auto
+      &:nth-child(3)
+        margin-left: auto
+        margin-right: auto
+      
+
+        
 @media screen and ( max-width: 760px )
   .row
     align-items: center
@@ -253,7 +276,7 @@
       display: none
     &__content
       width: 100%
-      man-width: 24.14rem
+      min-width: 24.14rem
       margin: 0 auto
       font-size: 1.5rem
     &__title
@@ -444,6 +467,21 @@
     display: none
   .footer__wrap
     background-image: none
+  .footer
+    &__form
+      #user-name__footer-error
+        position: absolute
+        top: 10rem
+      #user-phone__footer-error
+        position: absolute
+        top: 19rem
+      #user-question__footer-error
+        position: absolute
+        top: 28rem
+      #policyСheckbox-error
+        position: absolute
+        left: 0rem
+      top: 3rem
 
 
 @media screen and ( min-width: 760px )

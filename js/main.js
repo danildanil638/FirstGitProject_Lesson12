@@ -87,6 +87,20 @@ $(document).ready(function(){
         email: "Введите в формате: mame@domain.com"
       },
       policyСheckbox: "Вы не согласились с обработкой" 
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "sendmodal.php",
+        data: $('form').serialize(),
+        success: function (response) {
+          console.log('Вывелось!' + response);
+          alert("форма отпралена, мы свяжемся с вами через 10 минут")
+          $('form')[0].reset();
+          modal.removeClass('modal--visible');
+          $("body").css('overflow', 'visible');
+        }
+      });
     }
   });
 
@@ -120,6 +134,19 @@ $(document).ready(function(){
       },
       userPhoneControl: "Телефон обязателен",
       policyСheckbox: "Вы не согласились с обработкой" 
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "sendcontrol.php",
+        data: $('form').serialize(),
+        success: function (response) {
+          console.log('Вывелось!' + response);
+          alert("форма отпралена, мы свяжемся с вами через 10 минут")
+          $(form)[0].reset();
+          modal.removelass('modal--visible');
+        }
+      });
     }
   });
 
@@ -148,11 +175,21 @@ $(document).ready(function(){
       },
       userPhoneControl: "Телефон обязателен",
       policyСheckbox: "Вы не согласились с обработкой"
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "sendcontrol.php",
+        data: $('form').serialize(),
+        success: function (response) {
+          console.log('Вывелось!' + response);
+          alert("форма отпралена, мы свяжемся с вами через 10 минут")
+          $(form)[0].reset();
+          modal.removelass('modal--visible');
+        }
+      });
     }
   });
-
-
-
   // Валидация формы, footer
   $('.footer__form').validate({
     errorClass: "invalid",
@@ -165,7 +202,7 @@ $(document).ready(function(){
       },
       userPhoneFooter: {
         required: true,
-        minlength: 15
+        minlength: 17
       },
       userQuestionFooter: "required",
       policyСheckbox: {
@@ -181,7 +218,20 @@ $(document).ready(function(){
       userPhoneFooter: "Телефон обязателен",
       userQuestionFooter: "Обязательное поле",
       policyСheckbox: "Вы не согласились с обработкой" 
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "sendfooter.php",
+        data: $('form').serialize(),
+        success: function (response) {
+          console.log('Вывелось!' + response);
+          alert("форма отпралена, мы свяжемся с вами через 10 минут")
+          $(form)[0].reset();
+        }
+      });
     }
+    
   });
 // карта
   ymaps.ready(function () {
