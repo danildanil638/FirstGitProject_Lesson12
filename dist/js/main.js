@@ -1,3 +1,17 @@
+/*
+document.addEventListener("DOMContentLoaded", function(event) {
+  const modal = document.querySelector('.modal');
+  const modalBtn = document.querySelectorAll('[data-toggle=modal]');
+  const closeBtn = document.querySelector('.modal__close');
+  const switchModal = () => {
+    modal.classList.toggle('modal--visible');
+   }
+    modalBtn.forEach(element => {
+      element.addEventListener('click', switchModal);
+    });
+  closeBtn.addEventListener('click', switchModal);
+    });
+*/
 $(document).ready(function(){
   const modal = $('.modal'),
     modalBtn = $('[data-toggle=modal]'),
@@ -36,10 +50,10 @@ $(document).ready(function(){
   bullets.css('left', prev.width() +17)
 
 
+
   new WOW().init();
   // Валидация формы, модальное окно
   $('.modal__form').validate({
-    errorClass: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -87,22 +101,24 @@ $(document).ready(function(){
           $("body").css('overflow', 'visible');
         }
       });
-    },
+    }
   });
+
+  // маска для номера телефона
+  $('[type=tel]').mask('7 (000) 000-00-00', { placeholder: "Ваш номер телефона:" });
 
 
  // Валидация формы, controll
   $('.control__form').validate({
-    errorClass: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило
-      userNameControlMobile: {
+      userNameControl: {
         required: true,
         maxlength: 15,
         minlength: 2
       },
-      userPhoneControlMobile: {
+      userPhoneControl: {
         required: true,
         minlength: 17
       },
@@ -111,12 +127,12 @@ $(document).ready(function(){
       }
     },
     messages: {
-      userNameControlMobile: {
+      userNameControl: {
         required: "Имя обязательно",
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не должно быть длиннее 15 букв"
       },
-      userPhoneControlMobile: "Телефон обязателен",
+      userPhoneControl: "Телефон обязателен",
       policyСheckbox: "Вы не согласились с обработкой" 
     },
     submitHandler: function (form) {
@@ -131,11 +147,10 @@ $(document).ready(function(){
           modal.removelass('modal--visible');
         }
       });
-    },
+    }
   });
 
   $('.control__form__desctop').validate({
-    errorClass: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -173,28 +188,8 @@ $(document).ready(function(){
           modal.removelass('modal--visible');
         }
       });
-    },
+    }
   });
-  
-   // маска для номера телефона
-  $('[type=tel]').mask('7 (000) 000-00-00', { placeholder: "Ваш номер телефона:" });
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   // Валидация формы, footer
   $('.footer__form').validate({
     errorClass: "invalid",
