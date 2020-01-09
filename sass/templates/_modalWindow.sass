@@ -1,0 +1,57 @@
+.modal__window
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  z-index: 150
+  position: fixed
+  z-index: 100 
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  background-color: rgba($dark, 0.6) 
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: all 0.2s ease
+  &--visible
+    opacity: 1
+    visibility: visible
+    transition: all 0.2s ease
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+    transition: all 0.2s ease
+  &__text
+    line-height: 3.5rem
+    text-transform: uppercase
+    font-size: 2.5rem
+    max-width: 32rem
+    color: $primary
+    font-family: 'Yeseva One', cursive
+    font-weight: normal
+    &--light
+      color: $light      
+  &__title
+    color: $light
+    max-width: 32rem
+    font-size: 2.5rem
+  .modal__dialog
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    min-width: 48.36rem
+    min-height: 22.5rem
+
+
+.modal__window__visible body
+  overflow: hidden

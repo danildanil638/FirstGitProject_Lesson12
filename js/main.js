@@ -1,8 +1,11 @@
 $(document).ready(function(){
+  
   const modal = $('.modal'),
     modalBtn = $('[data-toggle=modal]'),
-    closeBtn = $('.modal__close');
-  
+    modalWindow = $('.modal__window'),
+    closeBtn = $('.modal__close'),
+    closeBtnWindow = $('.modal__window__close');
+
   modalBtn.on('click', function (){
     modal.toggleClass('modal--visible');
     $("body").css('overflow','hidden')
@@ -11,6 +14,19 @@ $(document).ready(function(){
     modal.toggleClass('modal--visible');
     $("body").css('overflow', 'visible')
   });
+
+  closeBtnWindow.on('click', function () {
+    modalWindow.toggleClass('modal__window--visible');
+    $("body").css('overflow', 'visible')
+  });
+
+  
+
+
+
+
+
+
 
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
@@ -36,7 +52,12 @@ $(document).ready(function(){
   bullets.css('left', prev.width() +17)
 
 
-  new WOW().init();
+  wow = new WOW(
+    {
+      mobile: false
+    }
+  )
+  wow.init();
   // Валидация формы, модальное окно
   $('.modal__form').validate({
     errorClass: "div",
@@ -81,10 +102,11 @@ $(document).ready(function(){
         data: $('form').serialize(),
         success: function (response) {
           console.log('Вывелось!' + response);
-          alert("форма отпралена, мы свяжемся с вами через 10 минут")
           $('form')[0].reset();
           modal.removeClass('modal--visible');
-          $("body").css('overflow', 'visible');
+          modalWindow.addClass('modal__window--visible');
+  
+
         }
       });
     },
@@ -92,7 +114,7 @@ $(document).ready(function(){
 
 
  // Валидация формы, controll
-  $('.control__form').validate({
+  $('.control__form__mobile').validate({
     errorClass: "div",
     errorClass: "invalid",
     rules: {
@@ -100,6 +122,8 @@ $(document).ready(function(){
       userNameControlMobile: {
         required: true,
         maxlength: 15,
+
+        
         minlength: 2
       },
       userPhoneControlMobile: {
@@ -126,9 +150,8 @@ $(document).ready(function(){
         data: $('form').serialize(),
         success: function (response) {
           console.log('Вывелось!' + response);
-          alert("форма отпралена, мы свяжемся с вами через 10 минут")
           $(form)[0].reset();
-          modal.removelass('modal--visible');
+          modalWindow.addClass('modal__window--visible');
         }
       });
     },
@@ -168,9 +191,8 @@ $(document).ready(function(){
         data: $('form').serialize(),
         success: function (response) {
           console.log('Вывелось!' + response);
-          alert("форма отпралена, мы свяжемся с вами через 10 минут")
           $(form)[0].reset();
-          modal.removelass('modal--visible');
+          modalWindow.addClass('modal__window--visible');
         }
       });
     },
@@ -231,8 +253,8 @@ $(document).ready(function(){
         data: $('form').serialize(),
         success: function (response) {
           console.log('Вывелось!' + response);
-          alert("форма отпралена, мы свяжемся с вами через 10 минут")
           $(form)[0].reset();
+          modalWindow.addClass('modal__window--visible');
         }
       });
     }

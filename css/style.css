@@ -1496,11 +1496,79 @@ h2.section-title__heading--primary {
 body.modal-open {
   overflow: hidden; }
 
+.modal__window {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 150;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .modal__window--visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .modal__window__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .modal__window__text {
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    max-width: 32rem;
+    color: #E3B873;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal; }
+    .modal__window__text--light {
+      color: #fff; }
+  .modal__window__title {
+    color: #fff;
+    max-width: 32rem;
+    font-size: 2.5rem; }
+  .modal__window .modal__dialog {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    min-width: 48.36rem;
+    min-height: 22.5rem; }
+
+.modal__window__visible body {
+  overflow: hidden; }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .team {
+    min-height: 100%; } }
 
 @media screen and (max-width: 1070px) {
   .clients .clients__col-33 {
@@ -1714,9 +1782,11 @@ body.modal-open {
     margin-top: -15.5rem; }
   .col-33 {
     width: 100%;
-    flex-basis: 100%; }
+    flex-basis: 100%;
+    max-width: 30rem; }
   .footer {
-    background: #131313; }
+    background: #131313;
+    margin-top: 4rem; }
     .footer__wrap {
       background-color: #131313;
       margin-top: -3rem; }
@@ -1841,6 +1911,10 @@ body.modal-open {
     font-size: 1.14rem; }
   .modal__button {
     align-self: auto; }
+  .modal__window .modal__dialog {
+    min-width: 100%;
+    padding-left: 7rem;
+    padding-right: 7rem; }
   .control__video {
     max-width: 28.28rem;
     min-height: 17rem;
@@ -1857,7 +1931,8 @@ body.modal-open {
   .clients {
     display: none; }
   .footer {
-    padding-top: 6.75rem; }
+    padding-top: 3.5rem;
+    margin-top: 0; }
     .footer__map {
       max-height: 13rem; }
     .footer__title {
@@ -1956,11 +2031,28 @@ body.modal-open {
       margin-top: 0;
       margin-bottom: 1rem; }
   .team__card {
-    max-width: 100%;
-    flex-basis: 100%; }
+    max-width: 26rem;
+    margin-left: 2.9rem; }
+  .team__col-33 {
+    margin-bottom: 1rem; }
+    .team__col-33:nth-child(1) {
+      margin-bottom: 1rem; }
+  .team .card__list {
+    max-width: 19.3rem;
+    margin-left: 2.5rem;
+    margin-top: -4rem; }
+    .team .card__list__heading {
+      padding-bottom: 2rem; }
+    .team .card__list__title {
+      font-size: 1.5rem;
+      padding-bottom: 0.6rem; }
+    .team .card__list__description {
+      font-size: 1.5rem; }
+    .team .card__list__info {
+      font-size: 1.1rem; }
   .team .card__icon {
-    left: -2.6rem;
-    top: -2.5rem;
+    left: -2.9rem;
+    top: -2.7rem;
     width: 5.7rem;
     height: 5.7rem; }
   .team__text {
@@ -1981,6 +2073,16 @@ body.modal-open {
     .footer__form #policyСheckbox-error {
       position: absolute;
       left: 0rem; } }
+
+@media screen and (max-width: 500px) {
+  .modal__window .modal__dialog {
+    padding: 1rem 6rem; } }
+
+@media screen and (max-width: 382px) {
+  .modal__window .modal__dialog {
+    padding: 1rem 3rem; }
+  .modal__window__title {
+    font-size: 1.5rem; } }
 
 @media screen and (min-width: 760px) {
   .row {
