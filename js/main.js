@@ -102,7 +102,7 @@ $(document).ready(function(){
         data: $('form').serialize(),
         success: function (response) {
           console.log('Вывелось!' + response);
-          $('form')[0].reset();
+          $(form)[0].reset();
           modal.removeClass('modal--visible');
           modalWindow.addClass('modal__window--visible');
   
@@ -199,7 +199,7 @@ $(document).ready(function(){
   });
   
    // маска для номера телефона
-  $('[type=tel]').mask('7 (000) 000-00-00', { placeholder: "Ваш номер телефона:" });
+  $('[type=tel]').mask('+7 (000) 000-00-00', { placeholder: "Ваш номер телефона:" });
 
 
   

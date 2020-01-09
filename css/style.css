@@ -492,6 +492,9 @@ body {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+button, a, form {
+  outline: none; }
+
 img {
   max-width: 100%; }
 
